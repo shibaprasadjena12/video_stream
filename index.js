@@ -45,7 +45,7 @@ app.use(express.urlencoded({extended: true}))
 app.use("/uploads", express.static("uploads"))
 
 app.get('/', function(req, res){
-  res.json({message: "Hello Shibaprasad"})
+  res.json({message: "Hello Shibaprasad Jena"})
 })
 
 app.post("/upload", upload.single('file'), function(req, res){
@@ -83,5 +83,5 @@ app.post("/upload", upload.single('file'), function(req, res){
 })
 
 app.listen(3000, function(){
-  console.log("App is listening at port 3000...")
+  console.log("App is running at port 3000...")
 })
